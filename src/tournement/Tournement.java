@@ -26,6 +26,7 @@ public class Tournement {
         }
         this.pokemons.remove(pokemon);
     }
+    
     public void start() throws PokemonNotFoundException, TournamentInvalidxception {
         // Permet de vérifier que le tournoi possède un nombre de Pokemon suffisant pour s'affronter
         if (Integer.bitCount(this.pokemons.size()) != 1 || this.pokemons.size() < 2) {
